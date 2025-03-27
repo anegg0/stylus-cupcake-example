@@ -1,0 +1,23 @@
+[package]
+name = "stylus-cupcake-example"
+version = "0.1.0"
+edition = "2021"
+description = "A simple cupcake vending machine contract built with Stylus SDK"
+
+[lib]
+crate-type = ["lib", "cdylib"]
+
+[[bin]]
+name = "stylus-cupcake-example"
+path = "src/bin.rs"
+
+[dependencies]
+alloy-primitives = "0.3"
+stylus-sdk = "0.9.1"
+wee_alloc = "0.4"
+
+[dev-dependencies]
+stylus-test = "0.9"
+
+[features]
+export-abi = ["stylus-sdk/export-abi"]

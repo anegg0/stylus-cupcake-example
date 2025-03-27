@@ -13,11 +13,11 @@ path = "src/bin.rs"
 
 [dependencies]
 alloy-primitives = "0.3"
-stylus-sdk = "0.9.1"
+stylus-sdk = "^0.8.3"
 wee_alloc = "0.4"
 
 [dev-dependencies]
-stylus-test = "0.9"
+stylus-sdk = { version = "0.8.3" }
 
 [features]
 export-abi = ["stylus-sdk/export-abi"]
